@@ -1,0 +1,225 @@
+/* Remove unwanted elements */
+#header,#banner-left,#banner-right, #navigation, .footer, .noprint,#noprint-wrapper,.content
+{
+display: none!important;
+}
+
+
+/* Ensure the content spans the full width */
+#container, #container2, #content
+{
+width: 100%;
+}
+
+/* Change text colour to black (useful for light text on a dark background) */
+.lighttext
+{
+color: #000 
+}
+
+/* Improve colour contrast of links */
+a:link, a:visited
+{
+color: #781351
+}
+
+p#onleave-reptgen{
+	display:block!important;
+}
+
+.print{
+	display:block;
+	color:#000;
+	font-weight: bolder;
+}
+
+#printonly{
+	display:block!important;
+	color:#000;
+	margin-top:-10px;
+}
+
+#leave-table{
+	width:100%;
+	padding:0px;
+	font-size: 8pt!important;
+
+}
+
+#leave-table tr.items td{
+	font-size: 10px!important;	
+	border:1px solid #666;
+}
+
+.dpsrept-table{
+	font-size: 9pt!important;
+	border-collapse:collapse;
+
+}
+
+.dpsrept-table td p{
+	font-size: 9pt!important;
+	margin:0px;
+}
+
+.dpsrept-table td p.toink{
+	font-size: 9pt!important;
+}
+
+#dpsreport-sig td{
+	padding:5px;
+	margin:0px;
+	font-size: 9pt!important;
+}
+
+
+table#agg_summ{
+	float:left;
+	border-spacing: 0px;
+	font-size:9pt!important;
+	font-family: "Trebuchet MS";
+	width:270px;
+	margin-right:60px;
+	border-collapse:collapse;
+}
+
+.insert-schedule{
+	background-color: #ffffff!important;
+}
+
+/*
+ul#leaves-sort-alpha,#employee_list_filter{
+	display: none;
+}
+
+#bodycontent-allemp,#bodycontent-allemp h3{
+	margin:0px!important;
+	padding:0px!important;
+}
+
+#leave-table tr.items td{
+	font-size: 7pt!important;
+	height:5pt!important;
+}
+
+
+*/
+
+
+#print-header-wrapper{
+	display: block;
+	height:100px;
+	padding:3px;
+	padding-bottom:0px;
+}
+
+#dpsreport-headleft{
+	display: block;
+	float:left;
+	width:400px;
+}
+
+#dpsreport-headright{
+	display: block;
+	float:right;
+}
+
+#print-header-wrapper img{
+	float:left;
+}
+
+#print-header-wrapper p{
+	float:left;
+	font-size: 12px;
+	margin-left:20px;
+	font-weight: bold;
+	font-family: "Trebuchet MS";
+}
+
+#print-header-wrapper h1#total-vol{
+	float:left;
+	font-size: 10pt;
+	margin-right: 50px;
+	text-align: center;
+}
+
+#print-header-wrapper h1#total-vol span{
+	font-size: 10pt!important;
+}
+
+.unheading{
+	height:0px!important;
+	font-weight: normal!important;
+	font-size: 7pt!important;
+}
+
+#dps-report-wrapper{
+	padding:0px;
+	margin:0px;
+	border:1px solid #666;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+
+#dpsreport-table tr.items:hover{
+		background-color: none!important;
+	}
+
+#dpsreport-sig{
+	font-family: "Verdana";
+	width:100%;
+	border-spacing: 0px!important;
+}
+
+#dpsreport-sig td{
+	padding:0px 5px;
+	margin:0px;
+	font-size: 7pt!important;
+}
+
+.report-td-right{
+	border-right:1px solid #666;
+}
+
+#rept-wrapper h2{
+	font-size: 16px;
+}
+
+
+/*----------------------------------------------------------
+|
+|	DEU PRINT STYLES
+|
+|
+------------------------------------------------------------*/
+
+/* performance report */
+#perfreport-search{
+	display:none;
+}
+#perfrep-printheader{
+	display:block;
+}
+
+.deu-table tr#heading th{
+	color:#333!important;
+	border-bottom:1px solid #666;
+	margin-bottom:3px;
+	padding-bottom:3px;
+}
+
+/* monthly repairs */
+
+#monthlyrepairs,#searchhistory,#equipmentlist{
+	display:none;
+}
+#monthlyrep-printheader,#searchhistory-printheader,#equiplist-printheader{
+	display:block;
+}
+#monthlyrep-table,#equiplist-table{
+	font-size: 6pt;
+}
+#monthlyrep-table tr.items,#equiplist-table tr.items{
+	height:20px;
+	font-weight: normal;
+}

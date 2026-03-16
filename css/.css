@@ -1,0 +1,30 @@
+.frm-contract{
+	color: #353434;
+}
+
+.control-label{
+	font-size: 70%;
+}
+
+.form-control{
+	font-size: 70%;
+	height: 28px;
+}
+
+.form-control textarea{
+	font-size: 20px;
+}
+
+
+.btn:hover {
+	animation: bounce 2s;
+}
+
+.panel{
+	border: 1px solid #656262;
+	border-radius: 5px;
+}
+
+.panel-head{
+	border-bottom: 1px solid #656262;
+}

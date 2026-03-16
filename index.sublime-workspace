@@ -1,0 +1,295 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"rmc_pro",
+				"rmc_project_list"
+			],
+			[
+				"jlr",
+				"jlregner"
+			],
+			[
+				"dps",
+				"dps_model"
+			],
+			[
+				"cust_a",
+				"cust_name"
+			],
+			[
+				"custoe",
+				"customer_name"
+			],
+			[
+				"cus",
+				"cubrid_schema"
+			],
+			[
+				"cust_",
+				"Cust_Name"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 150.0,
+		"last_filter": "Package Control: ins",
+		"selected_items":
+		[
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: CDATA"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 432.0
+	},
+	"console":
+	{
+		"height": 120.0,
+		"history":
+		[
+			"'.php':",
+			"git clone https://github.com/mpmont/ci-snippets/git ci-snippets",
+			" git clone https://github.com/mpmont/ci-snippets/git ci-snippets",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/grodr_000/Downloads/ci-snippets-master/anchor.sublime-snippet",
+		"/C/Users/grodr_000/Downloads/ci-snippets-master/test/test_snippets.php",
+		"/C/Users/grodr_000/Downloads/atom-ci-snippets-develop/snippets/atom-ci-snippets.cson",
+		"/C/Users/grodr_000/AppData/Roaming/Sublime Text 3/Packages/User/View In Browser.sublime-settings",
+		"/C/wamp/www/jlrsuite/system/core/Loader.php",
+		"/C/Users/grodr_000/AppData/Local/Temp/scp44753/var/www/jlregner.com/public_html/regner/jlrsuite/application/views/dps/updatecontracts.php",
+		"/C/wamp/bin/mysql/mysql5.7.14/my.ini",
+		"/C/xampp/htdocs/jlrsuite/application/models/Login_model.php",
+		"/C/xampp/htdocs/jlrsuite/application/config/database.php",
+		"/C/xampp/htdocs/jlrsuite/application/controllers/Main.php",
+		"/C/Users/grodr_000/AppData/Local/Temp/scp40623/var/www/jlregner.com/public_html/regner/jlrsuite/application/models/Dps_model.php",
+		"/C/xampp/htdocs/jlrsuite/application/models/Dps_model.php",
+		"/C/Users/grodr_000/AppData/Local/Temp/scp42602/var/www/jlregner.com/public_html/regner/jlrsuite/application/controllers/Dps.php",
+		"/C/wamp/bin/mysql/mysql5.7.14/data/sample/db.opt",
+		"/C/xampp/htdocs/jlrsuite/application/controllers/Dps.php",
+		"/E/SOFTDEV/WEB/httpd.conf",
+		"/G/wamp/bin/apache/apache2.4.9/conf/httpd.conf",
+		"/C/xampp/apache/logs/error.log",
+		"/G/wamp/www/angular-demo/index.html",
+		"/C/xampp/htdocs/jlrsuite/.htaccess.save",
+		"/C/xampp/htdocs/jlrsuite/application/core/index.html",
+		"/C/xampp/htdocs/jlregner.com/public_html/regner/index.php",
+		"/C/xampp/htdocs/jlregner.com/public_html/regner/st_mailform_script.php",
+		"/C/xampp/htdocs/jlrsuite/application/config/config.php",
+		"/C/xampp/htdocs/jlregner.com/public_html/regner/jlrsuite/.htaccess.save",
+		"/C/xampp/apache/conf/httpd.conf",
+		"/C/xampp/htdocs/jlregner.com/public_html/regner/jlrsuite/contributing.md",
+		"/C/xampp/htdocs/jlregner.com/public_html/regner/jlrsuite/index.php",
+		"/C/xampp/htdocs/CandA_CRUD/index.php",
+		"/C/xampp/htdocs/jlregner.com/public_html/regner/__MACOSX/Scripts/._swfobject_modified.js",
+		"/E/SOFTDEV/WEB/www/jlregner.com/public_html/regner/jlrsuite/user_guide/_static/js/oldtheme.js",
+		"/E/SOFTDEV/WEB/www/jlregner.com/public_html/regner/jlrsuite/user_guide/_static/jquery.js",
+		"/E/SOFTDEV/WEB/www/jlregner.com/public_html/regner/_script/AC_ActiveX.js",
+		"/E/SOFTDEV/WEB/www/jlregner.com/public_html/regner/_script/AC_RunActiveContent.js",
+		"/C/xampp/htdocs/www/.htaccess.save",
+		"/C/xampp/htdocs/www/jlregner.com/public_html/regner/jlrsuite/application/.htaccess",
+		"/C/xampp/htdocs/jlrsuite/system/index.html",
+		"/C/xampp/htdocs/www/jlregner.com/public_html/regner/jlrsuite/application/config/autoload.php",
+		"/C/xampp/htdocs/www/jlregner.com/public_html/regner/jlrsuite/application/views/templates/login.php",
+		"/C/xampp/htdocs/www/jlregner.com/public_html/regner/jlrsuite/application/views/templates/main_view.php",
+		"/C/Users/grodr_000/AppData/Local/Temp/scp53792/var/www/jlregner.com/public_html/regner/index.php",
+		"/E/SOFTDEV/QAD-Sales-OTP/QAD-Sales/Forms/frmMain.vb",
+		"/E/SOFTDEV/QAD-Sales-OTP/QAD-Sales/Forms/Misc/frmMaintenance.vb",
+		"/C/xampp/htdocs/CodeIgniter/application/controllers/test/Stud_controller.php",
+		"/C/xampp/htdocs/CodeIgniter/application/models/test/Stud_Model.php",
+		"/C/xampp/htdocs/CodeIgniter/application/views/test/Stud_Add.php",
+		"/C/xampp/htdocs/CodeIgniter/application/config/database.php",
+		"/E/SOFTDEV/www/jlregner.com/public_html/regner/jlrsuite/application/views/mainmenu.php",
+		"/C/xampp/htdocs/CodeIgniter/application/config/config.php",
+		"/C/xampp/htdocs/CodeIgniter/application/index.html",
+		"/E/SOFTDEV/www/jlregner.com/public_html/regner/jlrsuite/application/views/warehouse/index.php",
+		"/C/Users/grodr_000/AppData/Local/Temp/Temp2_startbootstrap-sb-admin-2-gh-pages.zip/startbootstrap-sb-admin-2-gh-pages/index.html",
+		"/E/SOFTDEV/www/jlregner.com/public_html/regner/jlrsuite/application/controllers/Dps.php",
+		"/C/xampp/htdocs/CodeIgniter/CandA_CRUD/index.php",
+		"/C/xampp/htdocs/CodeIgniter/CandA_CRUD/system/index.html",
+		"/C/xampp/htdocs/CodeIgniter/CandA_CRUD/application/index.html",
+		"/C/Users/grodr_000/AppData/Local/Temp/Temp2_startbootstrap-sb-admin-2-gh-pages.zip/startbootstrap-sb-admin-2-gh-pages/data/flot-data.js",
+		"/C/Users/grodr_000/AppData/Local/Temp/Temp1_startbootstrap-sb-admin-2-gh-pages.zip/startbootstrap-sb-admin-2-gh-pages/index.html",
+		"/E/SOFTDEV/www/jlregner.com/public_html/regner/jlrsuite/application/views/dps/reports/dpsreport.php",
+		"/E/SOFTDEV/www/jlregner.com/public_html/regner/jlrsuite/application/views/dps/reports/aggsummary.php",
+		"/E/SOFTDEV/www/jlregner.com/public_html/regner/jlrsuite/application/views/dps/nobookings.php",
+		"/E/SOFTDEV/www/jlregner.com/public_html/regner/jlrsuite/application/views/index.html",
+		"/E/SOFTDEV/www/error/include/bottom.html",
+		"/E/SOFTDEV/www/jlregner.com/public_html/regner/jlrsuite/application/index.html",
+		"/E/SOFTDEV/www/jlregner.com/public_html/regner/beta/index.html",
+		"/C/Users/grodr_000/AppData/Local/Temp/scp23855/var/www/jlregner.com/public_html/regner/jlrsuite/application/views/dps/maintenance/customers.php",
+		"/C/Users/grodr_000/AppData/Local/Temp/scp58390/var/www/jlregner.com/public_html/regner/jlrsuite/application/models/Dps_model.php",
+		"/C/Users/grodr_000/AppData/Local/Temp/scp23654/var/www/jlregner.com/public_html/regner/jlrsuite/application/controllers/Dps.php",
+		"/C/Users/grodr_000/AppData/Local/Temp/scp21261/var/www/jlregner.com/public_html/regner/jlrsuite/application/models/Dps_model.php",
+		"/C/Users/grodr_000/AppData/Local/Temp/scp19327/var/www/jlregner.com/public_html/regner/jlrsuite/application/models/Dps_model.php",
+		"/C/Users/grodr_000/Desktop/ralph_sc.vb"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"C:\\xampp\\htdocs\\www\\jlregner.com\\public_html\\regner\\jlrsuite\\application"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"get_project_list_contracts",
+			"login_main",
+			"maintref",
+			"mainref",
+			"update",
+			"error",
+			"append-custinfo",
+			"customer",
+			"else",
+			"check",
+			"customer",
+			"check",
+			"customer",
+			"slump_code",
+			"slump_value"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 289.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

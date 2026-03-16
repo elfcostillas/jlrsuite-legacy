@@ -1,0 +1,228 @@
+function process_form1()
+	{
+		//set the date
+		$dateNow = date("Y-m-d");
+
+		$tomorrow = mktime(0,0,0,date("m"),date("d")+1,date("Y"));
+        $dateTom = date("Y-m-d", $tomorrow);
+
+        $form_number = '#'.$_POST['form-num'];
+
+        /*
+		//upload the image first
+		
+		$sFileTmpName = $_FILES['landmark-image']['tmp_name'];
+		//var_dump($_FILES); exit();
+		$sFileName = $_FILES['landmark-image']['name'];
+		$sFileType = $_FILES['landmark-image']['type'];
+		//$sFileSize = bytesToSize1024($_FILES['image_file']['size'], 1);
+
+
+		
+		$project_name = $_POST['form-num'];
+		$splitFilename = explode(".", $sFileName);
+		$splitFilename[0]; // filename
+		$splitFilename[1];  // file extension
+		$path = 'upload/' . $project_name . '.' . $splitFilename[1];;
+
+		
+		
+			if (is_uploaded_file($sFileTmpName))  {   
+			    if (move_uploaded_file($sFileTmpName, $path)) {
+			         //echo "File has been successfully uploaded";
+			    	$sketchFileLocation = $path; 
+
+			         	//check if checkboxes are checked or not
+						$permit_citom = (isset($_POST['check-citom'])) ? "YES" : "NO";
+						$permit_brgy = (isset($_POST['check-brgy'])) ? "YES" : "NO";
+						$permit_hasentfee = (isset($_POST['check-hasentfee'])) ? $_POST['check-entfee'] : "NO";
+						$permit_hasothers = (isset($_POST['check-hasothers'])) ? $_POST['check-others'] : "NO";
+
+						$add_pipes = (isset($_POST['check-add-pipes'])) ? $_POST['add-pipes-num'] : "NO";
+						$add_vibrator = (isset($_POST['check-add-vibrator'])) ? $_POST['add-vibrator-pesos'] : "NO";
+						$add_slumpcone = (isset($_POST['check-add-slumpcone'])) ? "YES" : "NO";
+						$add_beam = (isset($_POST['check-add-beam'])) ? "YES" : "NO";
+						$add_others = (isset($_POST['check-add-others'])) ? $_POST['add-others-value'] : "NO";
+
+						$special_service = ($_POST['check-service'] <> null) ? $_POST['check-service'] : "NO";
+						$special_production = ($_POST['check-production'] <> null) ? $_POST['check-production'] : "NO";
+						$special_qc = ($_POST['check-qc'] <> null) ? $_POST['check-qc'] : "NO";
+						$special_forinspection = (isset($_POST['check-forinspection'])) ? "YES" : "NO";
+						$special_forpouring = (isset($_POST['check-forpouring'])) ? "YES" : "NO";
+						$special_se = ($_POST['special-sales-engg'] <> null) ? $_POST['special-sales-engg'] : "NO";
+
+
+
+						//insert the project_customer
+						$client_id = $this->dps_model->insert_project_customer(mysql_real_escape_string($_POST['cust-name']),$_POST['office-add']);
+
+						$dateadd = $dateNow;
+
+						//insert the project_details
+						$project_id = $this->dps_model->insert_project_details($client_id,'666',$_POST['project-name'],$_POST['project-location'],$dateadd);
+
+						//insert the project_contacts
+						$contacts_acctg = (isset($_POST['accounting'])) ? $_POST['accounting'] : "n/a";
+						$contacts_acctgnum = (isset($_POST['accounting-phone'])) ? $_POST['accounting-phone'] : "n/a";
+						$contacts_witness = (isset($_POST['witness'])) ? $_POST['witness'] : "n/a";
+						$contacts_witnessnum = (isset($_POST['witness-phone'])) ? $_POST['witness-phone'] : "n/a";
+
+						//$_POST['accounting'],$_POST['accounting-phone'],$_POST['witness'],$_POST['witness-phone']
+						$this->dps_model->insert_project_contacts($project_id,$_POST['owner'],$_POST['owner-phone'],$_POST['engg-foreman'],$_POST['engg-foreman-phone'],$contacts_acctg,$contacts_acctgnum,$contacts_witness,$contacts_witnessnum);
+
+						
+						//Landmark Post Datas
+						$landmark_across = ($_POST['landmark-across'] <> null) ? $_POST['landmark-across'] : "NA";
+						$landmark_right = ($_POST['landmark-right'] <> null) ? $_POST['landmark-right'] : "NA";
+						$landmark_left = ($_POST['landmark-left'] <> null) ? $_POST['landmark-left'] : "NA";
+						$landmark_sketch = $sketchFileLocation;   //file location of the uploaded file
+
+						//update the project landmark description
+						$this->dps_model->insert_project_landmark($project_id,$landmark_across,$landmark_right,$landmark_left,$landmark_sketch);
+
+						//loop for the project_designs post variables
+						$counter = $_POST['designtable-ctr'];
+
+						$ctr = 1;
+						while ( $ctr <> $counter+1) {
+								$strength = $_POST['strength' . $ctr];
+								$agg = $_POST['agg' . $ctr];
+								$curing = $_POST['curing' . $ctr];
+								$slump = $_POST['slump' . $ctr];
+								$pouring = $_POST['pouring' . $ctr];
+								$struct = $_POST['struct' . $ctr];
+								$remarks = $_POST['remarks' . $ctr];
+								$estvolume = $_POST['estvolume' . $ctr] . ' ' . 'cum';
+								$scheddate = $_POST['scheddate' . $ctr];
+								$schedtime = $_POST['schedtime' . $ctr];
+								$mod_date = $scheddate;
+								$mod_time = $schedtime;
+								$designstatus = $_POST['designstatus' . $ctr];
+
+								switch ($slump) {
+									case 'S4':
+										$slump = '4"-6"';
+										break;
+									case 'S6':
+										$slump = '6"-8"';
+										break;
+									case 'S8':
+										$slump = '8"-10"';
+										break;
+									case 'Flow':
+										$slump = 'Flow';
+										break;
+									
+								}
+
+							/*
+								check design date
+								if date = today then design status = insert
+								if date = tomorrow(time is within 8-12) then it is normal/okay
+								if date = tomorrow(time is within 1-above) then it is insert tomorrow
+								override this options when the design status = for confirmation
+							*/
+
+							if($designstatus != 'For Confirmation'){
+								//if not confirmation then check others
+
+								switch ($mod_date) {
+									case $dateNow:
+										//design = insert
+										$designstatus = 'Insert';
+										break;
+
+									case $dateTom:
+										if($mod_time >= 0800 AND $modtime <= 1200){
+											//design = normal
+											$designstatus = 'Okay';
+										}
+
+										if($mod_time >= 1300){
+											//design = insert
+											$designstatus = 'Insert';
+										}
+										break;
+									
+								}
+
+								
+							}
+	
+
+							$this->dps_model->insert_project_design($project_id,$client_id,$form_number,mysql_real_escape_string($_POST['cust-name']),$_POST['project-name'],$_POST['project-location'],$strength,$agg,$curing,mysql_real_escape_string($slump),$pouring,$struct,$remarks,$estvolume,$scheddate,$schedtime,$mod_date,$mod_time,$permit_citom,$permit_brgy,$permit_hasentfee,$permit_hasothers,$add_pipes,$add_vibrator,$add_slumpcone,$add_beam,$add_others,$special_service,$special_production,$special_qc,$special_forinspection,$special_forpouring,$special_se,$_POST['contract-num'],$_POST['po-num'],$designstatus);
+							$ctr ++;
+
+							header('location:addproject');  //redirect
+						}
+						
+
+						//Sampling Procedure Post Datas checking
+						$samp_standard = 'NO';
+						$samp_others = 'NO';
+						switch ($_POST['check-sampling']) {
+							case 'standard':
+								$samp_standard = 'YES';
+								break;
+							
+							case 'others':
+								$samp_others = 'YES';
+								break;
+
+						}
+						//$samp_standard = ($_POST['check-sampling'] = "standard") ? "YES" : "NO";
+						//$samp_others = ($_POST['check-sampling'] = "others") ? "YES" : "NO";
+						$samp_oth_cylinder = ($_POST['cylinders'] <> null) ? $_POST['cylinders'] : "NA";
+						$samp_oth_cubic = ($_POST['cubic-meters'] <> null) ? $_POST['cubic-meters'] : "NA";
+
+						//Curing Post Datas
+						$curing_atsite = (isset($_POST['check-atsite'])) ? "YES" : "NO";
+						$curing_atjlr = (isset($_POST['check-atjlr'])) ? "YES" : "NO";
+
+						//Testing Schedule Post Datas
+						$testing_jlr = (isset($_POST['check-testing-jlrlab'])) ? "YES" : "NO";
+						$testing_ext = (isset($_POST['check-testing-external'])) ? "YES" : "NO";
+						$testing_jlr7 = (isset($_POST['test-jlr-7'])) ? "YES" : "NO";
+						$testing_jlr14 = (isset($_POST['test-jlr-14'])) ? "YES" : "NO";
+						$testing_jlr28 = (isset($_POST['test-jlr-28'])) ? "YES" : "NO";
+						$testing_ext7 = (isset($_POST['test-ext-7'])) ? "YES" : "NO";
+						$testing_ext14 = (isset($_POST['test-ext-14'])) ? "YES" : "NO";
+						$testing_ext28 = (isset($_POST['test-ext-28'])) ? "YES" : "NO";
+						$testing_extlabname = (isset($_POST['ext-labname'])) ? $_POST['ext-labname'] : "NA";
+						$testing_colab = ($_POST['co_lab'] <> null) ? $_POST['co_lab'] : "NA";
+						
+						//external lab name insert it
+
+						//Witness Post Datas
+						switch ($_POST['client-witness']) {
+							case 'with':
+								$client_witness = 'YES';
+								$consultant_name = ($_POST['consultant-name'] <> null) ? $_POST['consultant-name'] : "NA";
+								$consultant_num = ($_POST['consultant-num'] <> null) ? $_POST['consultant-num'] : "NA";
+								break;
+							case 'without':
+								$client_witness = 'NO';
+								$consultant_name = ($_POST['consultant-name'] <> null) ? $_POST['consultant-name'] : "NA";
+								$consultant_num = ($_POST['consultant-num'] <> null) ? $_POST['consultant-num'] : "NA";
+								break;
+							case 'sameas':
+								$client_witness = 'SAME';
+								$consultant_name = ($_POST['witness'] <> null) ? $_POST['witness'] : "NA";
+								$consultant_num = ($_POST['witness-num'] <> null) ? $_POST['witness-num'] : "NA";
+								break;	
+						}
+
+						//var_dump($samp_standard . '  ' . $samp_others ); exit();
+
+						$this->dps_model->insert_project_qc($project_id,$samp_standard,$samp_others,$samp_oth_cylinder,$samp_oth_cubic,$curing_atsite,$curing_atjlr,$testing_jlr7,$testing_jlr14,$testing_jlr28,$testing_extlabname,$testing_colab,$testing_ext7,$testing_ext14,$testing_ext28,$client_witness,$consultant_name,$consultant_num);
+
+
+						
+						
+			    } else {
+			         echo "File not moved to destination folder. Check permissions";
+			    };
+			} else {
+			     echo "File is not uploaded.";
+			}; 
+	}

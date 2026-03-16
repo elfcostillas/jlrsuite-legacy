@@ -1,0 +1,262 @@
+@font-face {
+    font-family: 'UbuntuBold';
+    src: url('fonts/Ubuntu-B-webfont.eot');
+    src: url('fonts/Ubuntu-B-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Ubuntu-B-webfont.woff') format('woff'),
+         url('fonts/Ubuntu-B-webfont.ttf') format('truetype'),
+         url('fonts/Ubuntu-B-webfont.svg#UbuntuBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+	margin:0px;
+	padding:0px;
+	background: url('images/lol.png');
+	background-repeat: repeat;
+}
+
+.grid960{
+	width:100%;
+	padding:10px;
+	margin:0px auto;
+	overflow: hidden;
+}
+
+#header-wrapper{
+	background: url('images/header-bg.png');
+	background-repeat: repeat;
+	width:100%;
+	height:136px;
+}
+
+
+#header-wrapper img{
+	float: left;
+	margin-top:20px;
+}
+
+#header-wrapper h1{
+	padding:0px;
+	margin:0px;
+	float: left;
+	font-size: 47px;
+	font-family: 'UbuntuBold';
+	color: #fff;
+	margin-left:15px;
+	margin-top:20px;
+
+	text-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+}
+#header-wrapper h1 span{
+	margin-top: -10px;
+	margin-right: 15px;
+	float:right;
+	font-size: 14px;
+	color: #ccc;
+}
+
+#header-date{
+	float:right;
+}
+
+#header-date p{
+	font-size: 50px;
+	font-family: 'UbuntuBold';
+	color: #003366;
+	opacity: 0.3;
+
+}
+
+#header-date p span{
+	position: relative;
+	top:-20px;
+	font-size: 17px;
+	font-weight: normal;
+	color: #ccc;
+}
+
+#main-wrapper{
+	margin-top:150px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	background-color: #F9F9F9;
+	border:1px solid #CCCCCC;
+}
+
+
+
+.item-wrapper{
+	/*float:left;*/
+	display:inline-block;
+	width:225;
+	height:50px;
+	margin:5px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background-color: #E8E8E8;
+	font-family: "Trebuchet MS";
+	overflow: hidden;
+	padding-top:30px;
+	background-image:url('images/white.png');
+	background-repeat:repeat;
+}
+
+
+/* MENU BUTTONS */
+.a_demo_four {
+	background-color:#3bb3e0;
+	font-family: 'Open Sans', sans-serif;
+	font-size:12px;
+	text-decoration:none;
+	color:#fff;
+	position:relative;
+	padding:10px 20px;
+	padding-right:50px;
+	background-image: linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+	background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, rgb(44,160,202)),
+	color-stop(1, rgb(62,184,229))
+	);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+	-moz-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+	-o-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+	box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+}
+
+.a_demo_four:active {
+	top:3px;
+	background-image: linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
+	background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, rgb(62,184,229)),
+	color-stop(1, rgb(44,160,202))
+	);
+	-webkit-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
+	-moz-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
+	-o-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
+	box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
+}
+
+.a_demo_four::before {
+	background-color:#2591b4;
+	background-image:url('images/right_arrow.png');
+	background-repeat:no-repeat;
+	background-position:center center;
+	content:"";
+	width:20px;
+	height:20px;
+	position:absolute;
+	right:15px;
+	top:50%;
+	margin-top:-9px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-box-shadow: inset 0px 1px 0px #052756, 0px 1px 0px #60c9f0;
+	-moz-box-shadow: inset 0px 1px 0px #052756, 0px 1px 0px #60c9f0;
+	-o-box-shadow: inset 0px 1px 0px #052756, 0px 1px 0px #60c9f0;
+	box-shadow: inset 0px 1px 0px #052756, 0px 1px 0px #60c9f0;
+}
+
+.a_demo_four:active::before {
+	top:50%;
+	margin-top:-12px;
+	-webkit-box-shadow: inset 0px 1px 0px #60c9f0, 0px 3px 0px #0e3871, 0px 6px 3px #1a80a6;
+	-moz-box-shadow: inset 0px 1px 0px #60c9f0, 0px 3px 0px #0e3871, 0px 6px 3px #1a80a6;
+	-o-box-shadow: inset 0px 1px 0px #60c9f0, 0px 3px 0px #0e3871, 0px 6px 3px #1a80a6;
+	box-shadow: inset 0px 1px 0px #60c9f0, 0px 3px 0px #0e3871, 0px 6px 3px #1a80a6;
+}
+
+#footer-wrapper{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border:1px solid #F4F4F4;
+	margin-top:100px;
+	background-image:url('images/white.png');
+	background-repeat:repeat;
+}
+
+#footer-wrapper p{
+	float:left;
+	padding:0px;
+	margin:0px;
+	font-size: 12px;
+	font-family: 'Open Sans',sans-serif;
+	color: #003366;
+	margin-top:5px;
+}
+
+#footer-wrapper a{
+	float:right;
+	padding:5px;
+	margin:0px;
+	font-size: 12px;
+	font-family: 'UbuntuBold';
+	color: #f1f1f1;
+	text-decoration: none;
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	background-color:#3B3B3B;
+}
+
+#footer-wrapper a:hover{
+	background-color:#312821;
+}
+
+
+
+/*	ACCESS DENIED STYLING	*/
+#denied-wrapper{
+	width:400px;
+	height:auto;
+	padding:10px;
+	margin:10px auto;
+	background-image:url('images/white.png');
+	background-repeat:repeat;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border:1px solid #ccc;
+	-moz-box-shadow:inset 0px 0px 8px #cccccc;
+	-webkit-box-shadow:inset 0px 0px 8px #cccccc;
+	box-shadow:inset 0px 0px 8px #cccccc;
+
+	margin-top:200px;
+}
+
+#denied-wrapper p#msg{
+	text-align: center;
+	font-size: 18px;
+	font-family: 'UbuntuBold';
+	color:#ff6666;
+	text-shadow:1px 2px 1px #666;
+}
+
+

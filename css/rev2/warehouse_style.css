@@ -1,0 +1,52 @@
+/*  
++   description : stylesheet use by the new online warehouse system
++   author : ralph ceriaco
++
+*/
+
+a:hover{
+  text-decoration: none;
+}
+a:visited{
+  text-decoration: none;
+}
+
+.hylit{
+  font-weight: bolder;
+  color: #27AE60;
+}
+
+.app-btn{
+  padding:5px;
+  background-color: #27AE60;
+  color:#ECF0F1;
+  text-decoration: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.app-btn:hover{
+  background-color: #2ECC71;
+  color:#ECF0F1;
+  text-decoration: none;
+}
+
+.itemdetails-tbl-row{
+  background-color: #FAFAFA;
+  display: none;
+  border-collapse: collapse;
+}
+
+.itemdetails-tbl-row span{
+  display: block;
+  font-size: 10px;
+}
+
+.itmd-hylit{
+  color: #E74C3C;
+}
+
+.info-icon{
+  color: #7f8286;
+}

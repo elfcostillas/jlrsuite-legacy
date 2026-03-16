@@ -1,0 +1,495 @@
+body{
+	padding:0px;
+	margin:0px;
+	background: url('images/bright_squares.png');
+	background-repeat: repeat;
+	font-family: "Helvetica";
+}
+
+.grid-940{
+	margin:0px auto;
+	width:940px;
+	background-color: #999999;
+	margin-bottom:20px;
+	overflow: hidden;
+	padding:10px;
+}
+
+.semifluid{
+	margin:0px auto;
+	width:95%;
+	background-color: #999999;
+	margin-bottom:20px;
+	overflow: hidden;
+	padding:10px;
+}
+
+.tables{
+	margin:30px auto;
+}
+
+#header{
+	height:120px;
+	margin-bottom:0px;
+	background: rgb(44,83,158); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(44,83,158,1) 0%, rgba(44,83,158,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(44,83,158,1)), color-stop(100%,rgba(44,83,158,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(44,83,158,1) 0%,rgba(44,83,158,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(44,83,158,1) 0%,rgba(44,83,158,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(44,83,158,1) 0%,rgba(44,83,158,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(44,83,158,1) 0%,rgba(44,83,158,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c539e', endColorstr='#2c539e',GradientType=0 ); /* IE6-9 */
+
+}
+#header h1{
+	display:inline-block;
+	margin:0px;
+	padding:60px;
+	background:url('images/jlr_logo.png');
+	background-repeat: no-repeat;
+	background-size: 110px, 90px;
+	margin:0px 10px;
+}
+
+#header h2{
+	display:inline-block;
+	position:relative;
+	top:-27px;
+	margin-left:5px;
+	font-weight: bolder;
+	font-style: italic;
+	color:#333;
+}
+
+#header p{
+	display:inline-block;
+	position:relative;
+	top:-10px;
+	left:-207px;
+	margin-left:5px;
+	font-size:12px;
+
+	color:#333;
+}
+
+#banner-left{
+	float:left;
+	width:500px;
+	padding:10px;
+}
+
+#banner-left h1{
+	padding:0px;
+	margin:0px;
+	font-size: 18px;
+	color:#333;
+}
+
+#banner-left p{
+	padding:0px;
+	font-size: 14px;
+	margin:0px;
+	color:#333;
+}
+
+#banner-right{
+	width:180px;
+	float:right;
+	z-index: 1000;
+}
+
+#content{
+	background-color: #fff;
+}
+
+#content h2,h3{
+	background-color: #FFFF99;
+	padding:5px 10px;
+	width:auto;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: italic;
+	
+	color:#333;
+}
+
+#content h2 span,h3 span{
+	font-size: 14px;
+	
+	color:#600;
+}
+
+.content-body{
+	padding:10px 10px;
+	margin-top: 20px;
+}
+
+/*
+|------------------------------------------------
+| Navigation style
+|------------------------------------------------
+| style for the navigation links are below here
+|
+| 
+*/
+#useroption p{
+	padding:0px;
+	margin:0px;
+	margin-bottom: 5px;	
+}
+
+#useroption a#option{
+	text-decoration: none;
+	padding:3px 5px;
+	background-color: #ccc;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+
+	color:#333;
+}
+
+#useroption a#option:hover{
+	background-color: #999;
+}
+
+#submenu{
+	position:absolute;
+	width:150px;
+	background-color: #999;
+	font-size: 13px;
+	padding:5px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	z-index: 1000;
+
+	background: rgb(238,238,238); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(238,238,238,1) 0%, rgba(204,204,204,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(238,238,238,1)), color-stop(100%,rgba(204,204,204,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+
+}
+
+#submenu ul{
+	padding:0px;
+	list-style-type: none;
+	margin:0px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+
+#submenu ul li a{
+	display: block;
+	text-decoration: none;
+	padding:3px;
+	background-color: #ccc;
+	color:#666;
+	margin:1px 0px;
+
+}
+
+#submenu ul li a:hover{
+	
+	background-color: #f3f3f3;
+	
+
+}
+
+
+div#navigation{ 
+    
+    border-radius: 4px;
+    margin:10px auto;
+   	height:37px;
+   	width:940px;
+   	padding:10px;
+
+  	background: rgb(51,51,51); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(51,51,51,1) 0%, rgba(79,79,79,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(51,51,51,1)), color-stop(100%,rgba(79,79,79,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(51,51,51,1) 0%,rgba(79,79,79,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(51,51,51,1) 0%,rgba(79,79,79,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(51,51,51,1) 0%,rgba(79,79,79,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(51,51,51,1) 0%,rgba(79,79,79,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#4f4f4f',GradientType=0 ); /* IE6-9 */
+
+
+}
+#navigation ul, #navigation li{ list-style:none; padding:0; margin:0; display:inline; }
+#navigation ul li{ float:left; position:relative; }
+#navigation ul li a{ 
+    display:block; 
+    padding:8px 12px; 
+    margin:1px; 
+    font-size:18px; 
+    white-space:nowrap; 
+    border-radius:3px;
+    text-decoration: none;
+    color:#ccc;
+    font-family: "Helvetica";
+    font-size: 16px;
+    background-color:#393838;
+    
+}
+#navigation ul li a:hover{ background:#222;}
+#navigation ul li a.active{
+	background:#222;
+}
+#navigation ul ul{ 
+    position:absolute; 
+    top:-99999px; 
+    left:0;
+    opacity: 0; /* Hide sub level */
+    -webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    z-index:497; 
+    background:#333; 
+    padding: 2px; 
+    border:1px solid #444; 
+    border-top:none; 
+    box-shadow:#111 0 3px 4px; 
+    border-bottom-left-radius:6px; 
+    border-bottom-right-radius:6px; 
+}
+#navigation ul ul ul { 
+    position:absolute; 
+    top:-99999px; 
+    left:100%; 
+    opacity: 0; 
+    -webkit-transition: opacity .5s ease-in-out; /* Hide sub levels */
+    -moz-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    border-radius:6px;
+    border:1px solid #444;
+}
+#navigation ul li:hover>ul{ opacity: 1; position:absolute; top:99%; left:0; z-index: 1;}
+#navigation ul ul li:hover>ul{ position:absolute; top:0; left:100%; opacity: 1; z-index:497; background:#333; }
+
+
+
+
+/*
+|------------------------------------------------
+| LOGIN Form styles
+|------------------------------------------------
+| style for the LOGIN forms(inputs,select,labels) are below here
+|
+| 
+*/
+
+#login-box{
+	display:block;
+	width:	400px;
+	height: 281px;
+	background-color: #f4f4f4;
+	margin:0px auto;
+	margin-top:50px;
+	margin-bottom:30px;
+}
+
+#login-box form{
+	padding:20px;
+}
+
+.login-fields{
+	margin-bottom:20px;
+}
+
+#login-box form input.login-input{
+	width:360px;
+	height:40px;
+	text-indent: 10px;
+	font-size: 16px;
+}
+
+#login-box form label{
+	font-size: 18px;
+	font-family: "Helvetica";
+	font-weight: bold;
+}
+
+#login-box form input#login-button{
+	float:right;
+	
+	width:100px;
+	height:35px;
+	font-size: 16px;
+	background-color: #06C;
+	border: none;
+	color:#fff;
+	border:1px solid #ccc;
+}
+
+#login-box form input#login-button:hover{
+	background-color: #999;
+}
+
+#login-error{
+	background-color:#fcbad5;
+	border:1px solid #b88081;
+	padding:10px 20px;
+	margin:0px;
+	color:#990000;
+}
+
+
+
+
+/*
+|------------------------------------------------
+| Footer style
+|------------------------------------------------
+| style for the footer are below here
+|
+| 
+*/
+
+	#footer{
+		padding:0px 10px;
+		margin-bottom:0px;
+		background: rgb(44,83,158); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(44,83,158,1) 0%, rgba(44,83,158,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(44,83,158,1)), color-stop(100%,rgba(44,83,158,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(44,83,158,1) 0%,rgba(44,83,158,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(44,83,158,1) 0%,rgba(44,83,158,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(44,83,158,1) 0%,rgba(44,83,158,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(44,83,158,1) 0%,rgba(44,83,158,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c539e', endColorstr='#2c539e',GradientType=0 ); /* IE6-9 */
+
+	}
+	#footer p{
+		color:#999;
+		font-size: 12px;
+	}
+
+
+	/* USER OPTION */
+	#useroption-wrapper
+	{  
+	    position:absolute;
+		left:-110px;
+	    width: auto;  
+	    height: auto;   
+	    background-color: #f3f3f3;  
+	    border: 1px solid #666;  
+	    margin-left:100px;
+	    margin-top:10px;
+	    color:#333;
+	    padding:15px 10px;
+	    z-index: 1000;
+
+	}
+	#useroption-wrapper:before  
+	{  
+	    content: ' ';  
+	    position: absolute;  
+	    width: 0;  
+	    height: 0;  
+	    left: 40px;  
+	    top: -15px;  
+	    border: 7px solid;  
+	    border-color: transparent transparent #333 transparent;  
+	} 
+
+	#useroption-wrapper:after 
+	{  
+	    content: ' ';  
+	    position: absolute;  
+	    width: 0;  
+	    height: 0;  
+	    left: 40px;  
+	    top: -14px;  
+	    border: 7px solid;  
+	    border-color: transparent transparent #f3f3f3 transparent;  
+	}
+
+	#useroption-wrapper div.fields{
+		margin:0px 10px;
+		padding:2px;
+		font-size: 12px;
+	}
+
+	#useroption-wrapper div.fields label{
+		display:block;
+		width:150px;
+	}
+
+	#useroption-wrapper div.fields input{
+		display:block;
+		width:150px;
+		height:20px;
+		text-align: center; 
+	}
+
+	#useroption-wrapper div.fields a {
+		-moz-box-shadow:inset 0px 1px 0px 0px #bee2f9;
+		-webkit-box-shadow:inset 0px 1px 0px 0px #bee2f9;
+		box-shadow:inset 0px 1px 0px 0px #bee2f9;
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #63b8ee), color-stop(1, #468ccf) );
+		background:-moz-linear-gradient( center top, #63b8ee 5%, #468ccf 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#63b8ee', endColorstr='#468ccf');
+		background-color:#63b8ee;
+		-moz-border-radius:6px;
+		-webkit-border-radius:6px;
+		border-radius:6px;
+		border:1px solid #3866a3;
+		display:inline-block;
+		color:#14396a;
+		font-family:arial;
+		font-size:14px;
+		font-weight:bold;
+		padding:6px 24px;
+		text-decoration:none;
+		text-shadow:1px 1px 0px #7cacde;
+
+	}
+	#useroption-wrapper div.fields a:hover {
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #468ccf), color-stop(1, #63b8ee) );
+		background:-moz-linear-gradient( center top, #468ccf 5%, #63b8ee 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#468ccf', endColorstr='#63b8ee');
+		background-color:#468ccf;
+	}
+	#useroption-wrapper div.fields a:active {
+		position:relative;
+		top:1px;
+	}
+
+	#useredit-error,#useredit-passerror{
+		display: block;
+		margin: 0px auto;
+		padding:3px;
+		background-color:#ffd2d3;
+		border:1px solid #cc9999;
+		color:#990000;
+		font-size: 10px;
+	}
+
+	#useredit-success{
+		display: block;
+		margin: 0px auto;
+		padding:3px;
+		background-color:#d4ffcd;
+		border:1px solid #9adf8f;
+		color:#258815;
+		font-size: 10px;
+	}
+
+	
+	/* test media query for login box */
+	@media (max-width: 321px) {
+  		#login-box{
+  			width:95%!important;
+  		}
+
+  		#login-box form input.login-input{
+			width:100%;
+		}
+	}

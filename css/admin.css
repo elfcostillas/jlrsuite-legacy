@@ -1,0 +1,108 @@
+/*----------------------------------------------------------------------------------------------
+|
+|   ADMINISTRATION PANEL STYLES START HERE
+|   AUTHOR : RALPH TAN CERIACO
+|	DATE : NOVEMBER 11, 2013
+|
+|
+-----------------------------------------------------------------------------------------------*/
+
+
+#grid{
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #434343;
+}
+
+#test16{
+	background-color: #e2e2e2;
+}
+
+#we{
+	background-color: #3768BA;
+}
+
+.title-head{
+	background-color: #3768BA;
+	font-family: Tahoma;
+	color: #f2f2f2;
+	font-weight: bold;
+}
+
+.title-head span{
+	margin-left:5px;
+}
+
+#chat-online-wrapper li{
+	list-style-type: none;
+	margin-bottom:1px;
+	font-size: 12px;
+}
+
+p#online{
+	margin-bottom:5px;
+}
+#olusers-count{
+	color: #96C52B;
+}
+.semi-headers{
+	background-color:#666;
+	color:#000;
+	padding:2px;
+}
+
+#log-wrapper{
+	overflow-y: scroll;
+	height:250px;
+}
+
+
+
+
+/* TEST TABLE LAYOUT */
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table th, table td {
+	padding: 10px 10px 9px;
+	font-size: 13px;
+	line-height: 18px;
+	text-align: left;
+}
+
+table td {
+	vertical-align: top;
+	border-top: solid 1px #ddd;
+}
+
+table th {
+	padding-top: 9px;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+table.condensed th, table.condensed td {
+	padding: 5px 5px 4px;
+}
+
+table.bordered {
+	border-collapse: separate;
+	border: solid 1px #ddd;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+table.bordered th + th,
+table.bordered th + td,
+table.bordered td + td {
+	border-left: solid 1px #ddd;
+}
+
+.zebra-striped tbody tr:nth-child(odd) td,
+.zebra-striped tbody tr:nth-child(odd) th {
+	background: #f5f5f5;
+}

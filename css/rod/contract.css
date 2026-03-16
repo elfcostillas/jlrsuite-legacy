@@ -1,0 +1,180 @@
+@media only screen and (min-width: 940px){
+	.my_container{
+		margin: auto;
+		width: 940px;
+	}
+}
+
+/*bootstrap design overide*/
+
+#client_rep .form-control{
+	color:red;
+}
+
+.frm-contract .control-label{
+	font-size:11px !important;
+}
+
+.frm-contract textarea .form-control{
+	font-size: 12px;
+}
+
+/*end of bootstrap design overide*/
+
+.bg-contract{
+	font-family: century !important;
+	background-color: #CE0F0F !important;
+}
+
+.frm-contract{ 
+	color: #535252;
+}
+
+#contract-table .table tr th{
+	font-size: 15px; 
+}
+
+.err-msg {
+	font-size: 70%;
+}
+
+#separator{
+	
+	/*background-color:#3140CF;*/
+	height: 1px;
+
+	/*border-bottom: 1px solid  #919090;*/
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	box-shadow: 2px 2px 2px #A39F9F;
+}
+
+table tr td{
+	font-size: 70%;
+	/*background-color: 	#565BBE;*/
+}
+
+.cntr-no{
+	font-size: 16px;
+	font-weight: bolder;
+	color: #0566D4;
+}
+#my_heading{
+	background-color:#CFCFCF;
+	border-color: #474747;
+}
+
+.approved{
+	font-size: 15px;
+	font-weight: bolder;
+	border:5px solid #3F86C3;
+	padding: 1px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+#contr-tbl th{
+	font-size: 70%;
+	font-family: tahoma;
+	font-weight: lighter;
+	text-align: center;
+}
+
+/*for no more table responsive table*/
+@media only screen and (max-width: 800px) {
+	
+	/* Force table to not be like tables anymore */
+	#contr-tbl table, 
+	#contr-tbl thead, 
+	#contr-tbl tbody, 
+	#contr-tbl th, 
+	#contr-tbl td, 
+	#contr-tbl tr { 
+		display: block; 
+	}
+ 
+	/* Hide table headers (but not display: none;, for accessibility) */
+	#contr-tbl thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+
+	}
+ 
+ 	#contr-tbl {
+ 		border:none;
+ 	}
+	#contr-tbl tr {
+		border-top: 2px;
+		/*border-radius: 10px;*/
+		margin: 10px; 
+		/*border: 1px solid #504E4E; */
+	}
+	
+	/*row style*/
+	#contr-tbl tr:nth-child(odd){
+		 background-color: #4F8EED;
+		 color:#EFEDED; 
+		box-shadow: 2px 2px 2px #888888;
+		
+	}
+
+	#contr-tbl tr:nth-child(odd):hover{
+		 box-shadow: 5px 5px 5px #888888;
+	}
+
+	#contr-tbl tr:nth-child(even){
+		background-color: #FFFFFF;
+		color:#348DFC;
+		border: 1px solid #888787;
+		box-shadow: 2px 2px 2px #888888;
+	}
+
+	#contr-tbl tr:nth-child(even):hover{
+		 box-shadow: 5px 5px 5px #888888;
+	}
+ 
+	#contr-tbl td { 
+		/* Behave  like a "row" */
+		border: none;
+		/*border-bottom: 1px solid #eee; */
+		position: relative;
+		padding-left: 50%; 
+		white-space: normal;
+		text-align:left;
+	}
+
+
+	#contr-tbl td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		text-align:left;
+		font-weight: bold;
+	}
+
+	#id{
+		font-size: 20px;
+		padding-left:80%;
+		border-bottom: 1px solid #A09C9C;
+	}
+
+ 
+	/*
+	Label the data
+	*/
+	#contr-tbl td:before { content: attr(data-title); }
+}
+
+.list-group-sm{
+	padding: 2;
+	font-size: 13;
+}
+

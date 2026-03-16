@@ -1,0 +1,79 @@
+/*======================================================
+|
+|	Mobile styles
+|	Ralph Tan Ceriaco
+|	last update:feb 2014
+=======================================================*/
+
+
+
+@font-face {
+    font-family: 'Lato-Reg';
+	src:url('fonts/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato-Light';
+	src:url('fonts/Lato-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#mobile-nav{
+	height:auto;
+	width:100%;
+	background-color: #2980b9;
+	font-family: 'Lato-Reg', sans-serif;
+}
+
+#mobile-nav h1{
+	display: inline-block;
+	margin: 10px 5px;
+	padding:0px;
+	font-size: 1.1em;
+	color: #ecf0f1;
+	font-weight: 700;
+}
+
+
+#menu-toggle{
+	float:right;
+    width: 1.75em;
+    height: .25em;
+    line-height: 0;
+    border-top: .75em double #565656;
+    border-bottom: .25em solid #565656;
+    margin: 10px;
+	padding:0px;
+	margin-right:5px;
+}
+
+#menu-toggle:hover{
+	cursor: pointer;
+}
+
+#mobilemenu{
+	list-style: none;
+	padding: 0px;
+	margin:0px;
+	width: 100%;
+}
+
+
+#mobilemenu a{
+	display: block;
+	padding:10px 5px;
+	text-decoration: none;
+	color:#fff;
+	border-top:1px solid #565656;
+	background-color: #363636;
+	font-weight: 300;
+	font-size: 1em;
+	font-family: 'Lato-Light', sans-serif;
+}
+
+#mobilemenu a:hover{
+	background-color:#565656;
+}
