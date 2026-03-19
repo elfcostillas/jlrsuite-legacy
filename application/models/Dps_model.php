@@ -620,8 +620,25 @@ class DPS_model extends CI_Model {
         }
         
 
-        if($query->num_rows() > 0){
+        if($query->num_rows() > 0){ 
+                    
+                    foreach ($query->result() as $res) {
+                        // if($res->book_psi != '' && $res->book_msa != '' && $res->book_cd != '' && $res->book_sp != ''){
+
+                        
+                        if (strpos($res->book_psi, '550 f') !== false) {
+                            //echo "SELECT * FROM mix_design WHERE (Psi like '%550 f%' OR Psi like '%550 F%' ) AND Msa='{$res->book_msa}' AND C_Days='{$res->book_cd}' AND Slump='{$res->book_sp}' AND active = 1 ORDER BY code;";
+                            //$dropdown = $this->db->query("SELECT * FROM mix_design WHERE (Psi like '%550 f%' OR Psi like '%550 F%' ) AND Msa='{$res->book_msa}' AND C_Days='{$res->book_cd}' AND Slump='{$res->book_sp}' AND active = 1 ORDER BY code;");
+                            $dropdown = $this->db->query("SELECT * FROM mix_design WHERE Psi='550F' AND Msa='{$res->book_msa}' AND (C_Days='{$res->book_cd}' OR C_Days=LPAD('{$res->book_cd}',3,0)) AND Slump='{$res->book_sp}' AND active = 1 ORDER BY code;");
+                        
+                        }else{
+                            $dropdown = $this->db->query("SELECT * FROM mix_design WHERE Psi='{$res->book_psi}' AND Msa='{$res->book_msa}' AND (C_Days='{$res->book_cd}' OR C_Days=LPAD('{$res->book_cd}',3,0)) AND Slump='{$res->book_sp}' AND active = 1 ORDER BY code;");
+                        }
+                        $res->dropdown = $dropdown->result();
+                    }
+                    
                     $summary['result'] = $query;
+                    
                     $summary['rowcount'] = $query->num_rows();
                     switch ($dept) {
                         case 'main':

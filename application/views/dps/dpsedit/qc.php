@@ -32,6 +32,9 @@
 							
 							while ( $i < $rows) {
 								$row = $result->row($i);
+
+								// var_dump($row->dropdown);
+								// die();
 								
 								$id = $row->o202_id;
 								$project_id = $row->project_id;
@@ -120,7 +123,8 @@
 									<option value="">Select</option>
 									<?php
 									
-										foreach($fcode as $fcode_list){
+										// foreach($fcode as $fcode_list){
+										foreach($row->dropdown as $fcode_list){
 												$f_code = $fcode_list->code;
 												$f_code_ltr = $fcode_list->Group_Qlt;
 												if ($fcode1 == $f_code){
@@ -137,7 +141,8 @@
 									<option value="">Select</option>
 									<?php
 									
-										foreach($fcode as $fcode_list){
+										// foreach($fcode as $fcode_list){
+										foreach($row->dropdown as $fcode_list){
 												$f_code = $fcode_list->code;
 												$f_code_ltr = $fcode_list->Group_Qlt;
 												if ($fcode2 == $f_code){
