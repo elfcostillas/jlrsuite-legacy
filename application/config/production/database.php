@@ -88,10 +88,10 @@ $db['default'] = array(
 */
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => '172.24.224.1',
+	'hostname' => '172.17.42.100',
 	//'hostname' => '172.17.56.100',
-	'username' => 'elmer',
-	'password' => 'password',
+	'username' => 'admin_prog',
+	'password' => 'cvvljllv557',
 	'database' => 'jl_regner_db',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
