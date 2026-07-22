@@ -76,6 +76,7 @@
 					$acctg_remarks = $row->acctg_remarks;
 					$fcode1 = $row->f_code1;
 					$fcode2 = $row->f_code2;
+					$fcode3 = $row->f_code3;
 
 					//get the other remarks
 					$add_pipes = $row->add_pipes;
@@ -176,6 +177,7 @@
 								<div id="code">
 									<span id="code1"><a><?php echo $fcode1 ?></a></span>
 									<span id="code2"><a><?php echo $fcode2 ?></a></span>
+									<span id="code3"><a><?php echo $fcode3 ?></a></span>
 								</div>
 							</div>
 						</td>

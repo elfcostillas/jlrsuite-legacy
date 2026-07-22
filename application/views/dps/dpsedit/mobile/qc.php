@@ -62,6 +62,7 @@
 				$acctg_remarks = $row->acctg_remarks;
 				$fcode1 = $row->f_code1;
 				$fcode2 = $row->f_code2;
+				$fcode3 = $row->f_code3;
 				$qa_rep = $row->qa_rep;
 				$qc_remarks = $row->qc_remarks;
 
@@ -100,6 +101,7 @@
 					<div id="code">
 						<span id="code1"><a id="<?php echo $id ?>"><?php echo $fcode1 ?></a></span>
 						<span id="code2"><a id="<?php echo $id ?>"><?php echo $fcode2 ?></a></span>
+						<span id="code3"><a id="<?php echo $id ?>"><?php echo $fcode3 ?></a></span>
 					</div>
 				</div>
 			</td>
@@ -139,6 +141,22 @@
 								$f_code = $fcode_list->code;
 								$f_code_ltr = $fcode_list->Group_Qlt;
 								if ($fcode2 == $f_code){
+									echo '<option selected="true" value="' . $f_code . '">' . $f_code .'</option>';
+								}else{
+									echo '<option value="' . $f_code . '">' . $f_code .'</option>';
+								}
+						}			
+					?>
+
+				</select>
+				<select autocomplete="off" name="fcode3" id="fcode3<?php echo $id ?>" class="fcode3">
+					<option value="">Select</option>
+					<?php
+					
+						foreach($fcode as $fcode_list){
+								$f_code = $fcode_list->code;
+								$f_code_ltr = $fcode_list->Group_Qlt;
+								if ($fcode3 == $f_code){
 									echo '<option selected="true" value="' . $f_code . '">' . $f_code .'</option>';
 								}else{
 									echo '<option value="' . $f_code . '">' . $f_code .'</option>';

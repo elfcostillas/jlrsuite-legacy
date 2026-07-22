@@ -1184,8 +1184,15 @@
               var qc_remarks = $(this).parent().prev().children('select#qc_remarks'+id).attr('value');
               var qc_opt_remarks = $(this).parent().prev().children('#qc_opt_remarks'+id).attr('value');
               var qa_rep = $(this).parent().prev().prev().children('select#qa_rep'+id).attr('value');
-              var f_code2 = $(this).parent().prev().prev().prev().children('select#fcode2'+id).attr('value');
-              var f_code1 = $(this).parent().prev().prev().prev().children('select#fcode1'+id).attr('value');
+            //   var f_code2 = $(this).parent().prev().prev().prev().children('select#fcode2'+id).attr('value');
+            //   var f_code1 = $(this).parent().prev().prev().prev().children('select#fcode1'+id).attr('value');
+            //   var f_code3 = $(this).parent().prev().prev().prev().children('select#fcode3'+id).attr('value');
+			var row = $(this).closest('tr');
+			var f_code1 = row.find('#fcode1' + id).val();
+			var f_code2 = row.find('#fcode2' + id).val();
+			var f_code3 = row.find('#fcode3' + id).val();
+
+			  console.log(f_code1,f_code2,f_code3);
 
               if (confirm("Are you sure you want to update this?"))
   	          {
@@ -1193,7 +1200,7 @@
                         url: "update_qc", //The url where the server req would we made.
                         async: false, 
                         type: "POST", //The type which you want to use: GET/POST
-                        data: "id="+id+"&fcode1="+f_code1+"&fcode2="+f_code2+"&qa_rep="+qa_rep+"&qc_remarks="+qc_remarks+"&date="+sched_date+"&qcoptrem="+qc_opt_remarks, //The variables which are going.
+                        data: "id="+id+"&fcode1="+f_code1+"&fcode2="+f_code2+"&fcode3="+f_code3+"&qa_rep="+qa_rep+"&qc_remarks="+qc_remarks+"&date="+sched_date+"&qcoptrem="+qc_opt_remarks, //The variables which are going.
                         dataType: "html", //Return data type (what we expect).
                          
                         //This is the function which will be called if ajax call is successful.
@@ -1419,7 +1426,7 @@
           
           $('.qccheck').hide();
           var i = 0;
-          $('.fcode1,.fcode2,.qa_rep,.qc_remarks').change(function() {
+          $('.fcode1,.fcode2,.fcode3,.qa_rep,.qc_remarks').change(function() {
                   	var id = $(this).parent().parent().attr('id');
                   	
                 

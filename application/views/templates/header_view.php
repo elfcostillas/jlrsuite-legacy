@@ -1535,6 +1535,7 @@
               var qa_rep = $(this).parent().prev().prev().children('select#qa_rep'+id).attr('value');
               var f_code2 = $(this).parent().prev().prev().prev().children('select#fcode2'+id).attr('value');
               var f_code1 = $(this).parent().prev().prev().prev().children('select#fcode1'+id).attr('value');
+              var f_code3 = $(this).parent().prev().prev().prev().children('select#fcode3'+id).attr('value');
 
               if (confirm("Are you sure you want to update this?"))
 		          {
@@ -1711,7 +1712,7 @@
 	                //$('.acctg-multiupdate-but').hide();
 	                $('.qccheck').hide();
 	                var i = 0;
-	                $('.fcode1,.fcode2,.qa_rep,.qc_remarks').change(function() {
+	                $('.fcode1,.fcode2,.qa_rep,.fcode3.qc_remarks').change(function() {
 	                	var id = $(this).parent().parent().attr('id');
 	                	
 	              

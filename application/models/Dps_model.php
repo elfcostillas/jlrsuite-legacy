@@ -785,7 +785,7 @@ class DPS_model extends CI_Model {
             return $query->result();
     }
 
-    function update_qc($id,$fcode1,$fcode2,$qa_rep,$qc_remarks,$qc_remarks_opt)
+    function update_qc($id,$fcode1,$fcode2,$fcode3,$qa_rep,$qc_remarks,$qc_remarks_opt)
     {
         $rev_status = $this->dps_model->get_revisionstatus($id);
 
@@ -817,6 +817,7 @@ class DPS_model extends CI_Model {
                                    SET
                                    `f_code1`='{$fcode1}',
                                    `f_code2`='{$fcode2}',
+                                   `f_code3`='{$fcode3}',
                                    `qa_rep`='{$qa_rep}',
                                    `qc_remarks`='{$remarks}',
                                    `revision_status` = '{$revision_status}'

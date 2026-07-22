@@ -67,6 +67,7 @@
 								$acctg_remarks = $row->acctg_remarks;
 								$fcode1 = $row->f_code1;
 								$fcode2 = $row->f_code2;
+								$fcode3 = $row->f_code3;
 								$qa_rep = $row->qa_rep;
 								$qc_remarks = $row->qc_remarks;
 
@@ -105,6 +106,7 @@
 									<div id="code">
 										<span id="code1"><a id="<?php echo $id ?>"><?php echo $fcode1 ?></a></span>
 										<span id="code2"><a id="<?php echo $id ?>"><?php echo $fcode2 ?></a></span>
+										<span id="code3"><a id="<?php echo $id ?>"><?php echo $fcode3 ?></a></span>
 									</div>
 								</div>
 							</td>
@@ -117,43 +119,73 @@
 								} 
 							?>
 
-							<td align="center" class="<?php echo $dpsedit_class?>">
+							<td align="center" class="<?php echo $dpsedit_class?>" >
+								<div style="display: flex; justify-content: center; gap:10px;">
 								
-								<select autocomplete="off" name="fcode1" id="fcode1<?php echo $id ?>" class="fcode1">
-									<option value="">Select</option>
-									<?php
-									
-										// foreach($fcode as $fcode_list){
-										foreach($row->dropdown as $fcode_list){
-												$f_code = $fcode_list->code;
-												$f_code_ltr = $fcode_list->Group_Qlt;
-												if ($fcode1 == $f_code){
-													echo '<option selected="true" value="' . $f_code . '">' . $f_code .'</option>';
-												}else{
-													echo '<option value="' . $f_code . '">' . $f_code .'</option>';
-												}
-										}			
-									?>
+									<div>
+										<span style="font-size:9pt">Plant 3</span>
+										<br>
+										<select autocomplete="off" name="fcode1" id="fcode1<?php echo $id ?>" class="fcode1">
+											<option value="">Select</option>
+											<?php
+											
+												// foreach($fcode as $fcode_list){
+												foreach($row->dropdown as $fcode_list){
+														$f_code = $fcode_list->code;
+														$f_code_ltr = $fcode_list->Group_Qlt;
+														if ($fcode1 == $f_code){
+															echo '<option selected="true" value="' . $f_code . '">' . $f_code .'</option>';
+														}else{
+															echo '<option value="' . $f_code . '">' . $f_code .'</option>';
+														}
+												}			
+											?>
 
-								</select>
+										</select>
+									</div>
+									<div>
+										<span style="font-size:9pt">Plant 4</span>
+										<br>
+										<select autocomplete="off" name="fcode2" id="fcode2<?php echo $id ?>" class="fcode2">
+											<option value="">Select</option>
+											<?php
+											
+												// foreach($fcode as $fcode_list){
+												foreach($row->dropdown as $fcode_list){
+														$f_code = $fcode_list->code;
+														$f_code_ltr = $fcode_list->Group_Qlt;
+														if ($fcode2 == $f_code){
+															echo '<option selected="true" value="' . $f_code . '">' . $f_code .'</option>';
+														}else{
+															echo '<option value="' . $f_code . '">' . $f_code .'</option>';
+														}
+												}			
+											?>
 
-								<select autocomplete="off" name="fcode2" id="fcode2<?php echo $id ?>" class="fcode2">
-									<option value="">Select</option>
-									<?php
-									
-										// foreach($fcode as $fcode_list){
-										foreach($row->dropdown as $fcode_list){
-												$f_code = $fcode_list->code;
-												$f_code_ltr = $fcode_list->Group_Qlt;
-												if ($fcode2 == $f_code){
-													echo '<option selected="true" value="' . $f_code . '">' . $f_code .'</option>';
-												}else{
-													echo '<option value="' . $f_code . '">' . $f_code .'</option>';
-												}
-										}			
-									?>
+										</select>
+									</div>
+									<div>
+										<span style="font-size:9pt">Plant 5</span>
+										<br>
+										<select autocomplete="off" name="fcode3" id="fcode3<?php echo $id ?>" class="fcode3">
+											<option value="">Select</option>
+											<?php
+											
+												// foreach($fcode as $fcode_list){
+												foreach($row->dropdown as $fcode_list){
+														$f_code = $fcode_list->code;
+														$f_code_ltr = $fcode_list->Group_Qlt;
+														if ($fcode3 == $f_code){
+															echo '<option selected="true" value="' . $f_code . '">' . $f_code .'</option>';
+														}else{
+															echo '<option value="' . $f_code . '">' . $f_code .'</option>';
+														}
+												}			
+											?>
 
-								</select>
+										</select>
+									</div>
+								</div>
 							</td>
 
 							<?php

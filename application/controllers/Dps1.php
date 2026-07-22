@@ -3698,6 +3698,7 @@ class DPS extends CI_Controller {
 					$sales_engr = $row->special_se;
 					$f_code1 = $row->f_code1;
 					$f_code2 = $row->f_code2;
+					$f_code3 = $row->f_code3;
 					$po = $row->po_no;
 
 					//get the notes value
@@ -3763,6 +3764,7 @@ class DPS extends CI_Controller {
 								echo "<div id='code'>";
 									echo "<span id='code1'><a>$f_code1</a></span>";
 									echo "<span id='code2'><a>$f_code2</a></span>";
+									echo "<span id='code2'><a>$f_code3</a></span>";
 								echo "</div>";
 							echo "</div>";
 						echo "</td>";

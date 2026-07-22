@@ -1290,8 +1290,6 @@ class DPS extends CI_Controller {
 	}
 
 
-	
-
 
 	// function scheduler()
 	// {
@@ -2324,13 +2322,14 @@ class DPS extends CI_Controller {
 		$id = $_POST['id'];
 		$fcode1 = $_POST['fcode1'];
 		$fcode2 = $_POST['fcode2'];
+		$fcode3 = $_POST['fcode3'];
 		$qa_rep = $_POST['qa_rep'];
 		$qc_remarks = $_POST['qc_remarks'];
 		$date = $_POST['date'];
 		$qcrem_optional = $_POST['qcoptrem'];
 		
 
-		$this->dps_model->update_qc($id,$fcode1,$fcode2,$qa_rep,$qc_remarks,$qcrem_optional);
+		$this->dps_model->update_qc($id,$fcode1,$fcode2,$fcode3,$qa_rep,$qc_remarks,$qcrem_optional);
 		$this->dps_model->update_timestamps($date,$this->initial,3);
 		$this->dps_model->set_manager_status($id,'Unapproved','','');
 	}
@@ -3406,6 +3405,7 @@ class DPS extends CI_Controller {
 								echo "<div id='code'>";
 									echo "<span id='code1'><a>$f_code1</a></span>";
 									echo "<span id='code2'><a>$f_code2</a></span>";
+									echo "<span id='code3'><a>$f_code3</a></span>";
 								echo "</div>";
 							echo "</div>";
 						echo "</td>";
@@ -3589,6 +3589,7 @@ class DPS extends CI_Controller {
 								echo "<div id='code'>";
 									echo "<span id='code1'><a>$f_code1</a></span>";
 									echo "<span id='code2'><a>$f_code2</a></span>";
+									echo "<span id='code3'><a>$f_code3</a></span>";
 								echo "</div>";
 							echo "</div>";
 						echo "</td>";
@@ -3776,6 +3777,7 @@ class DPS extends CI_Controller {
 								echo "<div id='code'>";
 									echo "<span id='code1'><a>$f_code1</a></span>";
 									echo "<span id='code2'><a>$f_code2</a></span>";
+									echo "<span id='code2'><a>$f_code3</a></span>";
 								echo "</div>";
 							echo "</div>";
 						echo "</td>";

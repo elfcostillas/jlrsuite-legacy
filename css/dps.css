@@ -3646,13 +3646,22 @@ table#agg_summ{
 #code span#code1{
 	float:left;
 	height:25px;
-	width:120px;
+	/* width:120px; */
+	width:80px;
 	background-color: #e2e1e1;
 
 }
 
 
 #code span#code2{
+	float:left;
+	height:25px;
+	width:40px;
+	background-color: #edebeb;
+
+}
+
+#code span#code3{
 	float:left;
 	height:25px;
 	width:40px;
